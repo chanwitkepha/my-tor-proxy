@@ -2,8 +2,10 @@ version: '3'
 
 services:
   my-tor-proxy:
+    build: .
+    restart: always
 #    image:  dperson/torproxy     
-    image:  registry.gitlab.com/chanwit.kepha/my-tor-proxy:latest
+#    image:  registry.gitlab.com/chanwit.kepha/my-tor-proxy:latest
     container_name: my-tor-proxy
     ports:
       - "9050:9050"
