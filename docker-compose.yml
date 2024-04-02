@@ -1,10 +1,11 @@
 version: '3'
 
 services:
-  my-tor-proxy:
-    build: .
+  tor-proxy:
+    image: chanwitkepha/tor-proxy:alphine-3.19.1-20240402-1011
+#    build: .
     restart: always
-    container_name: my-tor-proxy
+    container_name: tor-proxy
     ports:
       - "9050:9050"
     tty: true
@@ -13,18 +14,14 @@ services:
 #    network_mode: host
 
     networks:
-      my-tor-proxy:
+      tor-proxy:
         ipv4_address: 10.248.248.2
 
 networks:
-   my-tor-proxy:
+   tor-proxy:
     driver: bridge
     ipam:
       driver: default
       config:
       - subnet: 10.248.248.0/24
 
-
-
-#volumes:
-#   data-ache:
