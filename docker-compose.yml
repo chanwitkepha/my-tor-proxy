@@ -2,7 +2,7 @@ version: '3'
 
 services:
   tor-proxy:
-    image: chanwitkepha/tor-proxy:alphine-3.19.1-20240402-1011
+    image: chanwitkepha/tor-proxy:alphine-3.19.1-20240511-0730
 #    build: .
     restart: always
     container_name: tor-proxy
