@@ -9,8 +9,8 @@ services:
     ports:
       - "9050:9050"
     tty: true
-#    volumes:
-#      - ./torrc:/etc/tor/torrc
+    volumes:
+      - ./torrc:/etc/tor/torrc
 #    network_mode: host
 
     networks:

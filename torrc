@@ -2,3 +2,6 @@ AutomapHostsOnResolve 1
 DNSPort 5353
 DataDirectory /var/lib/tor
 SocksPort 0.0.0.0:9050
+
+EntryNodes {sg} StrictNodes 1
+ExitNodes {de} StrictNodes 1
